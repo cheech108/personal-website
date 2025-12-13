@@ -1,0 +1,76 @@
+body{
+    background-color: #73A9E5;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.mContent{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    padding: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Change width for viewports wider than 768px */
+@media screen and (min-width: 768px) {
+  .mContent {
+    width: 75%; /* Becomes 50% width on tablets and desktops */
+  }
+}
+
+/* Change width for viewports wider than 1200px */
+@media screen and (min-width: 1600px) {
+  .mContent {
+    width: 1200px; /* Becomes a fixed 300px width on large screens */
+  }
+}
+
+.header {
+    text-align: center;
+}
+
+.spinner {  
+    text-align: center;
+    color: blue;
+    /* Apply the animation: spin animation, 2 seconds duration, linear timing, infinite loop */
+    animation: spin 2s linear infinite;
+    /* apply the gradient as a background image */
+    background-image: linear-gradient(to right, #ff0000, #ffff00, #0000ff);
+    /*clip the background to the text shape (use -webkit- for compatibility) */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* Start at 0 degrees */
+        font-size: 15px; 
+    }
+    50%{
+        font-size: 20px;
+        background-image: linear-gradient(to right, #0000ff, #ffff00, #ff0000);
+    }
+    to {
+        transform: rotate(360deg); /* End at 360 degrees (a full turn) */
+        font-size: 15px;
+    }
+}
+
+div.projectBorder{
+    height:100px;
+    background-image: linear-gradient(to bottom, #437eff, #306beb);
+    border-radius: 7px;
+    padding:5px;
+}
+div.projectTop{
+    width:100%;
+    height: 50px;
+    display:flex;
+    justify-content:flex-end
+}
