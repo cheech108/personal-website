@@ -74,3 +74,8 @@ div.projectTop{
     display:flex;
     justify-content:flex-end
 }
+img.projectTop{
+    border-radius: 7px;
+    border-color: white;
+    border: 3px;
+}
