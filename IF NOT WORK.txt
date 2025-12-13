@@ -1,0 +1,1 @@
+run chmod -R 0755 /var/www/ in ssh

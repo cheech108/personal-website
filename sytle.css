@@ -109,7 +109,9 @@ div.projectContent{
     margin:0px;
 }
 .imageContent{
-    width: 25%;
+    padding: 2%;
+    padding-left: 6%;
+    width: 15%;
 }
 
 div.socials{
